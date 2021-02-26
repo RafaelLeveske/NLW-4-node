@@ -5,7 +5,16 @@
   "author": "Rafael Leveske <rafaelleveske@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "bcryptjs": "^2.4.3",
+    "celebrate": "^13.0.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "lodash": "^4.17.21",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.18",
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.4.0"
   },
   "scripts": {
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
@@ -15,8 +24,10 @@
     "test": "jest"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
     "@types/express": "^4.17.9",
     "@types/jest": "^26.0.19",
+    "@types/lodash": "^4.14.168",
     "@typescript-eslint/eslint-plugin": "^4.11.0",
     "@typescript-eslint/parser": "^4.11.0",
     "eslint": "6.8.0",
