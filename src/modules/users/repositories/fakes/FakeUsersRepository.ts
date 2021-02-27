@@ -11,7 +11,7 @@ class FakeUsersRepository implements IUsersRepository {
   ): Promise<UserModel | null | undefined> {
     const findUser = this.users
       .find(user => user.id === id)
-      ?.populate('companies');
+      ?.populate('surveys');
 
     return findUser;
   }

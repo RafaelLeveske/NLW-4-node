@@ -1,9 +1,11 @@
+import { SurveyModel } from '@modules/surveys/infra/mongoose/schemas/Survey';
 import mongoose, { Schema } from 'mongoose';
 
 export type UserModel = mongoose.Document & {
   name: string;
   email: string;
   password: string;
+  survey: SurveyModel['_id'];
   created_at: Date;
   updated_at: Date;
 };
